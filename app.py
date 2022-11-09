@@ -1,15 +1,9 @@
-# Ler planilha CSV
-# Criar um dicionario dos dados dos colaboradores
-# Trabalhar os dados 
-# Pegar codigo empresa
-# Classe tirar o numero
-# CPF - tirar pontos e traço
-# PIS - tirar pontos
-# trabalhar a data para digitar
-# tipo admissao , retirar o numero
-# pegar a funcao
-# pegar o tipo de colaborador
-# pegar e trabalhar o valor salario
+from leitura_csv import ler_planilha_csv
+
+cadastro_colaboradro = ler_planilha_csv()
+
+print(cadastro_colaboradro)
+
 # Se tipo de contrato for prazo indeterminado nao ler prazo de contrato
 # senao ler prazo de contrato
 
