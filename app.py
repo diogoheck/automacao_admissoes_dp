@@ -1,13 +1,13 @@
 from leitura_csv import ler_planilha_csv
+from login_unico import logar_unico
 
 cadastro_colaboradro = ler_planilha_csv()
 
 print(cadastro_colaboradro)
 
-# Se tipo de contrato for prazo indeterminado nao ler prazo de contrato
-# senao ler prazo de contrato
 
 # logar no unico
+logar_unico()
 # entrar no unico->folha
 # ALT + A, D -> Admissao preliminar
 # digitar numero da empresa
