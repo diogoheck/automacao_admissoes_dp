@@ -1,5 +1,7 @@
 from leitura_csv import ler_planilha_csv
 from login_unico import logar_unico
+from selecionar_mod_DP import acessar_modulo_folha
+from admissao_preliminar import acessar_modulo_admissao_preliminar
 
 cadastro_colaboradro = ler_planilha_csv()
 
@@ -9,7 +11,9 @@ print(cadastro_colaboradro)
 # logar no unico
 logar_unico()
 # entrar no unico->folha
-# ALT + A, D -> Admissao preliminar
+acessar_modulo_folha()
+# Admissao preliminar
+acessar_modulo_admissao_preliminar()
 # digitar numero da empresa
 # enter
 # enter
