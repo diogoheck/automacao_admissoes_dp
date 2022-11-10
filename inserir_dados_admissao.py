@@ -1,5 +1,9 @@
 import pyautogui
 from time import sleep
+import pyperclip
+			
+			
+
 
 def cadastrar_admissao(cadastro):
     # digitar numero da empresa
@@ -12,7 +16,8 @@ def cadastrar_admissao(cadastro):
     pyautogui.press('enter')
     sleep(1)
     # digita o nome do colaborador
-    pyautogui.write(cadastro['Nome do Colaborador'])
+    pyperclip.copy(cadastro['Nome do Colaborador'])
+    pyautogui.hotkey('ctrl', 'v')
     sleep(1)
     # enter
     pyautogui.press('enter')
