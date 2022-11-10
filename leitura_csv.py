@@ -28,7 +28,7 @@ def ler_planilha_csv():
                 cadastro_colaborador['Tipo de Colaborador'] = linha[10]
                 # pegar e trabalhar o valor salario e retirar ponto se tiver
                 cadastro_colaborador['Salário Base'] = linha[11].replace('.', '')
-                cadastro_colaborador['Tipo de Contrato'] = linha[12]
+                cadastro_colaborador['Tipo de Contrato'] = linha[12].split('-')[0].strip()
                 cadastro_colaborador['Prazo de Contrato'] = linha[13]
             cabecalho = False
     return cadastro_colaborador

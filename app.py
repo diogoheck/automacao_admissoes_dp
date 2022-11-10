@@ -2,42 +2,24 @@ from leitura_csv import ler_planilha_csv
 from login_unico import logar_unico
 from selecionar_mod_DP import acessar_modulo_folha
 from admissao_preliminar import acessar_modulo_admissao_preliminar
+from inserir_dados_admissao import cadastrar_admissao
+from time import sleep
 
-cadastro_colaboradro = ler_planilha_csv()
+cadastro_colaborador = ler_planilha_csv()
 
-print(cadastro_colaboradro)
+print(cadastro_colaborador)
 
 
 # logar no unico
-logar_unico()
+# logar_unico()
 # entrar no unico->folha
-acessar_modulo_folha()
+# acessar_modulo_folha()
 # Admissao preliminar
+sleep(5)
 acessar_modulo_admissao_preliminar()
-# digitar numero da empresa
-# enter
-# enter
-# digita o nome do colaborador
-# enter
-# digita classe
-# enter
-# digita cpf
-# digita pis
-# digita data admissao
-# digita data nascimento
-# digita tipo admissao
-# enter
-# enter
-# digita funcao
-# enter
-# digita tipo colaborador 
-# enter
-# digita salario base
-# enter
-# digita tipo de contrato
-# se tipo contrato for 3 entao:
-# enter
-# digita o prazo em dias
-# pagdown
-# se o prazo for indeterminado
-# pagdown
+# cadastro admissao preliminiar
+cadastrar_admissao(cadastro_colaborador)
+
+print('*' * 50)
+print('FIM')
+print('*' * 50)
